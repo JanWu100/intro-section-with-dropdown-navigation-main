@@ -37,7 +37,7 @@
         <ul class="list">
           <li class="list__item list__item--nav">
             <div class="dropdown">
-              <a href="#">Features<img class="dropdown__arrow" src="./images/icon-arrow-up.svg" alt=""></a>
+              <a class="dropdown__link" href="#">Features</a>
               <div class="dropdown__menu dropdown__menu--left">
                 <ul class="list">
                   <li class="list__item list__item--dropdown"><a href="#"><span class="list__item__icon"><img src="./images/icon-todo.svg" alt=""/></span>Todo List</a></li>
@@ -49,7 +49,7 @@
             </div>
           </li>
           <li class="list__item list__item--nav"><div class="dropdown">
-            <a href="#">Company<img class="dropdown__arrow" src="./images/icon-arrow-up.svg" alt=""></a>
+            <a class="dropdown__link" href="#">Company</a>
             <div class="dropdown__menu dropdown__menu--right">
               <ul class="list">
                 <li class="list__item list__item--dropdown"><a href="#">History</a></li>
@@ -67,22 +67,8 @@
         </div>
       </div>
     </nav>
-    <script>
-      document.querySelector(".nav__burger").addEventListener("click", () => {
-        console.log("a");
-        document
-          .querySelector(".nav__menu")
-          .classList.remove("nav__menu--hidden");
-      });
-      document
-        .querySelector(".nav__menu__close-icon")
-        .addEventListener("click", () => {
-          console.log("b");
-          document
-            .querySelector(".nav__menu")
-            .classList.add("nav__menu--hidden");
-        });
-    </script>
+
+    <script src="./js/main.js"></script>
     <!-- Login Register Make remote work Get your team
     in sync, no matter your location. Streamline processes, create team rituals,
     and watch productivity soar. Learn more -->
