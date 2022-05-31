@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__logo">
+        <img src="./images/logo.svg" alt="" srcset="" />
+      </div>
+      <div class="nav__burger">
+        <img src="./images/icon-menu.svg" alt="" srcset="" />
+      </div>
+
+      <div class="nav__menu nav__menu--hidden">
+        <div class="nav__menu__close-icon">
+          <img src="./images/icon-close-menu.svg" alt="" srcset="" />
+        </div>
+        <ul class="list">
+          <li class="list__item list__item--nav">
+            <div class="dropdown">
+              <a href="#">Features<img class="dropdown__arrow" src="./images/icon-arrow-up.svg" alt=""></a>
+              <div class="dropdown__menu dropdown__menu--left">
+                <ul class="list">
+                  <li class="list__item list__item--dropdown"><a href="#"><span class="list__item__icon"><img src="./images/icon-todo.svg" alt=""/></span>Todo List</a></li>
+                  <li class="list__item list__item--dropdown"><a href="#"><span class="list__item__icon"><img src="./images/icon-calendar.svg" alt=""/></span>Calendar</a></li>
+                  <li class="list__item list__item--dropdown"><a href="#"><span class="list__item__icon"><img src="./images/icon-reminders.svg" alt=""/></span>Reminders</a></li>
+                  <li class="list__item list__item--dropdown"><a href="#"><span class="list__item__icon"><img src="./images/icon-planning.svg" alt=""/></span>Planning</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="list__item list__item--nav"><div class="dropdown">
+            <a href="#">Company<img class="dropdown__arrow" src="./images/icon-arrow-up.svg" alt=""></a>
+            <div class="dropdown__menu dropdown__menu--right">
+              <ul class="list">
+                <li class="list__item list__item--dropdown"><a href="#">History</a></li>
+                <li class="list__item list__item--dropdown"><a href="#">Our Team</a></li>
+                <li class="list__item list__item--dropdown"><a href="#">Blog</a></li>
+              </ul>
+            </div>
+          </div></li>
+          <li class="list__item list__item--nav"><a href="#">Careers</a></li>
+          <li class="list__item list__item--nav"><a href="#">About</a></li>
+        </ul>
+        <div class="nav__menu__login">
+          <button class="btn">Login</button>
+          <button class="btn btn--outline">Register</button>
+        </div>
+      </div>
+    </nav>
+    <script>
+      document.querySelector(".nav__burger").addEventListener("click", () => {
+        console.log("a");
+        document
+          .querySelector(".nav__menu")
+          .classList.remove("nav__menu--hidden");
+      });
+      document
+        .querySelector(".nav__menu__close-icon")
+        .addEventListener("click", () => {
+          console.log("b");
+          document
+            .querySelector(".nav__menu")
+            .classList.add("nav__menu--hidden");
+        });
+    </script>
+    <!-- Login Register Make remote work Get your team
+    in sync, no matter your location. Streamline processes, create team rituals,
+    and watch productivity soar. Learn more -->
+  </body>
+</html>
