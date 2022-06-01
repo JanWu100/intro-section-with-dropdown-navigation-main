@@ -24,15 +24,15 @@
   <body>
     <nav class="nav">
       <div class="nav__logo">
-        <img src="./images/logo.svg" alt="" srcset="" />
+        <img src="./images/logo.svg" alt="" />
       </div>
       <div class="nav__burger">
-        <img src="./images/icon-menu.svg" alt="" srcset="" />
+        <img src="./images/icon-menu.svg" alt="" />
       </div>
 
       <div class="nav__menu nav__menu--hidden">
         <div class="nav__menu__close-icon">
-          <img src="./images/icon-close-menu.svg" alt="" srcset="" />
+          <img src="./images/icon-close-menu.svg" alt="" />
         </div>
         <ul class="list">
           <li class="list__item list__item--nav">
@@ -40,24 +40,56 @@
               <a class="dropdown__link" href="#">Features</a>
               <div class="dropdown__menu dropdown__menu--left">
                 <ul class="list">
-                  <li class="list__item list__item--dropdown"><a href="#"><span class="list__item__icon"><img src="./images/icon-todo.svg" alt=""/></span>Todo List</a></li>
-                  <li class="list__item list__item--dropdown"><a href="#"><span class="list__item__icon"><img src="./images/icon-calendar.svg" alt=""/></span>Calendar</a></li>
-                  <li class="list__item list__item--dropdown"><a href="#"><span class="list__item__icon"><img src="./images/icon-reminders.svg" alt=""/></span>Reminders</a></li>
-                  <li class="list__item list__item--dropdown"><a href="#"><span class="list__item__icon"><img src="./images/icon-planning.svg" alt=""/></span>Planning</a></li>
+                  <li class="list__item list__item--dropdown">
+                    <a href="#"
+                      ><span class="list__item__icon"
+                        ><img src="./images/icon-todo.svg" alt="" /></span
+                      >Todo List</a
+                    >
+                  </li>
+                  <li class="list__item list__item--dropdown">
+                    <a href="#"
+                      ><span class="list__item__icon"
+                        ><img src="./images/icon-calendar.svg" alt="" /></span
+                      >Calendar</a
+                    >
+                  </li>
+                  <li class="list__item list__item--dropdown">
+                    <a href="#"
+                      ><span class="list__item__icon"
+                        ><img src="./images/icon-reminders.svg" alt="" /></span
+                      >Reminders</a
+                    >
+                  </li>
+                  <li class="list__item list__item--dropdown">
+                    <a href="#"
+                      ><span class="list__item__icon"
+                        ><img src="./images/icon-planning.svg" alt="" /></span
+                      >Planning</a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
           </li>
-          <li class="list__item list__item--nav"><div class="dropdown">
-            <a class="dropdown__link" href="#">Company</a>
-            <div class="dropdown__menu dropdown__menu--right">
-              <ul class="list">
-                <li class="list__item list__item--dropdown"><a href="#">History</a></li>
-                <li class="list__item list__item--dropdown"><a href="#">Our Team</a></li>
-                <li class="list__item list__item--dropdown"><a href="#">Blog</a></li>
-              </ul>
+          <li class="list__item list__item--nav">
+            <div class="dropdown">
+              <a class="dropdown__link" href="#">Company</a>
+              <div class="dropdown__menu dropdown__menu--right">
+                <ul class="list">
+                  <li class="list__item list__item--dropdown">
+                    <a href="#">History</a>
+                  </li>
+                  <li class="list__item list__item--dropdown">
+                    <a href="#">Our Team</a>
+                  </li>
+                  <li class="list__item list__item--dropdown">
+                    <a href="#">Blog</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div></li>
+          </li>
           <li class="list__item list__item--nav"><a href="#">Careers</a></li>
           <li class="list__item list__item--nav"><a href="#">About</a></li>
         </ul>
@@ -68,9 +100,69 @@
       </div>
     </nav>
 
+    <header>
+      <section class="header">
+        <div>
+          <div class="header__body">
+            <h1>Make remote work</h1>
+            <p class="header__body__text">
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <button class="btn btn--outline btn--big btn--black">
+              Learn more
+            </button>
+          </div>
+          <div class="header__body__sponsors">
+            <img
+              class="header__body__sponsors__item"
+              src="./images/client-databiz.svg"
+              alt=""
+            />
+            <img
+              class="header__body__sponsors__item"
+              src="./images/client-audiophile.svg"
+              alt=""
+            />
+            <img
+              class="header__body__sponsors__item"
+              src="./images/client-meet.svg"
+              alt=""
+            />
+            <img
+              class="header__body__sponsors__item"
+              src="./images/client-maker.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="header__image">
+          <img
+            class="header__image--desktop"
+            src="./images/image-hero-desktop.png"
+            alt=""
+          />
+          <img
+            class="header__image--mobile"
+            src="./images/image-hero-mobile.png"
+            alt=""
+          />
+        </div>
+      </section>
+    </header>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/JanWu100" target="_blank">JanWu100</a>.
+      </div>
+    </footer>
+
     <script src="./js/main.js"></script>
-    <!-- Login Register Make remote work Get your team
-    in sync, no matter your location. Streamline processes, create team rituals,
-    and watch productivity soar. Learn more -->
   </body>
 </html>
