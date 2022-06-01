@@ -62,9 +62,22 @@ p {
   z-index: 10;
 }
 
+.nav__menu::after {
+  content: "";
+  position:absolute;
+  right: 240px;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  opacity: .5;
+}
+
 .nav__menu--hidden {
   transform: translateX(100%);
   opacity: 0;
+  pointer-events: none;
+
 }
 
 .nav__menu__close-icon {
@@ -265,7 +278,6 @@ footer {
   .nav__menu__close-icon {
     display: none;
   }
-
   .list {
     margin: 0;
   }
@@ -285,11 +297,16 @@ footer {
     padding: 0 2rem 0 4rem;
     background: none;
   }
+  .nav__menu::after {
+    display: none;
+  }
   .nav__menu--hidden {
     transform: translateX(0%);
     transition: transform 0s;
     opacity: 1;
+    pointer-events: all;
   }
+  
   .list__item--nav {
     float: left;
     margin: 0 3rem 0 0;
