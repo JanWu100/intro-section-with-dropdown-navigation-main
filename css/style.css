@@ -123,6 +123,7 @@ p {
 
 .nav__burger {
   padding: 1.6rem;
+  cursor: pointer;
 }
 
 .btn {
