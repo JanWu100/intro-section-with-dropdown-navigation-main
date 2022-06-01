@@ -54,7 +54,7 @@ p {
   background-color: white;
   top: 0;
   right: 0;
-  min-width: 240px;
+  min-width: min(100%,240px);
   height: 100%;
   padding: 2rem 2rem 2rem 2.5rem;
   transform: translateX(0%);
