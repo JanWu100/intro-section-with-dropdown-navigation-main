@@ -14,7 +14,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://stunning-starlight-549023.netlify.app/](https://stunning-starlight-549023.netlify.app/)
+- Live Site URL: [https://amazing-tartufo-58ac49.netlify.app/](https://amazing-tartufo-58ac49.netlify.app/)
 
 ### Built with
 
